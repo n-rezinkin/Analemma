@@ -6676,6 +6676,7 @@ body {
     margin-top: 5px;
     width: 196px;
     padding-left: 15px;
+    text-align: center;
   }
 }
 .price__weight-box {
@@ -6920,7 +6921,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   /* identical to box height */
-  color: #ffffff;
+  color: #ffffff !important;
 }
 @media (max-width: 1199.98px) {
   .map__legend-title {
@@ -7402,6 +7403,7 @@ body {
 @media (max-width: 575.98px) {
   .footer__info-courier {
     width: 100%;
+    padding-right: 0;
   }
 }
 .footer__phone-number {

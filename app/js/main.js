@@ -22,6 +22,7 @@ if (priceTabs) {
 
             currentBtn.classList.add('active');
             currentTab.classList.add('active');
+
          }
       });
    });

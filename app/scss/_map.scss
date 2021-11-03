@@ -48,7 +48,7 @@
       line-height: 29px;
       /* identical to box height */
 
-      color: #ffffff;
+      color: #ffffff !important;
 
       @include media-breakpoint-down(xl) {
          font-size: 20px;
