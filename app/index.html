@@ -119,49 +119,38 @@
 
       </section>
 
-      <!-- <section class="price">
-      <div class="container">
-         <div class="row">
-            <div class="col-4">
-               <div class="price__left">
-                  <h3 class="price__left-title">Какое золото мы покупаем?</h3>
-                  <button class="price__tab-btn active" data-tab="#tab_1">
-                     <i class="icon-ringssvg"></i> Ювелирные украшения</button>
-                  <button class="price__tab-btn" data-tab="#tab_2">
-                     <i class="icon-diamondsvg"></i> Ювелирные изделия с бриллиантами</button>
-                  <button class="price__tab-btn" data-tab="#tab_3">
-                     <i class="icon-watchsvg"></i>
-                     Часы</button>
-                  <button class="price__tab-btn" data-tab="#tab_4">
-                     <i class="icon-goldsvg"></i>
-                     Лом драгоценных металлов</button>
+      <section class="price">
+         <div class="container">
+            <div class="row">
+               <div class="col-3 col-sm-4 price__col-left">
+                  <div class="price__left">
+                     <h3 class="price__left-title">Какое золото мы покупаем?</h3>
+                     <button class="price__tab-btn active" data-tab="#tab_1">
+                        <i class="icon-ringssvg"></i><span>Ювелирные украшения</span></button>
+                     <button class="price__tab-btn" data-tab="#tab_2">
+                        <i class="icon-diamondsvg"></i><span>Ювелирные изделия с бриллиантами</span></button>
+                     <button class="price__tab-btn" data-tab="#tab_3">
+                        <i class="icon-watchsvg"></i> <span>Часы</span>
+                     </button>
+                     <button class="price__tab-btn" data-tab="#tab_4">
+                        <i class="icon-goldsvg"></i><span>Лом драгоценных металлов</span></button>
+                  </div>
+
                </div>
-
-            </div>
-            <div class="col-8">
-               <div class="price__right">
-                  <h3 class="price__right-title">Расчитайте стоимость своего изделия</h3>
-                  <div class="price__right-item active" id="tab_1">
-                     <button class="price__right-tab active" data-tab="#priceTab_1">Золото</button>
-                     <button class="price__right-tab" data-tab="#priceTab_2">Серебро</button>
-
-                     <div class="price__right-content active" id="priceTab_1">
-                        <form action="" class="price__form">
-                           <div class="row">
-                              <div class="price__form-first d-flex">
-                                 <div class="col col-xl-3">
-                                    <div class="row">
+               <div class="col-9 col-sm-8 price__col-right">
+                  <div class="price__right">
+                     <h3 class="price__right-title">Расчитайте стоимость своего изделия</h3>
+                     <div class="price__right-item active" id="tab_1">
+                        <div class="price__right-tab-box">
+                           <button class="price__right-tab active" data-tab="#priceTab_1">Золото</button>
+                           <button class="price__right-tab" data-tab="#priceTab_2">Серебро</button>
+                        </div>
+                        <div class="price__right-content active" id="priceTab_1">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
                                        <label for="metal" class="price__form-label">Укажите пробу металла</label>
-                                    </div>
-                                    <div class="row mt-4">
-                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
-                                    </div>
-                                    <div class="row mt-4">
-                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
-                                    </div>
-                                 </div>
-                                 <div class="col col-xl-3 me-5">
-                                    <div class="row">
                                        <select name="metal" id="metal">
                                           <option value="585">585</option>
                                           <option value="375">375</option>
@@ -173,85 +162,439 @@
                                           <option value="999">999</option>
                                        </select>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
                                        <input type="text" id="weight" name="weight">
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
                                        <input type="tel" id="phone" name="phone" placeholder="88005553535">
                                     </div>
                                  </div>
-                                 <div class="col col-xl-3">
-                                    <div class="row">
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
                                        <label for="payment" class="price__form-label">Укажите способ оплаты</label>
-                                    </div>
-                                    <div class="row mt-4">
-                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
-                                    </div>
-                                 </div>
-                                 <div class="col col-xl-3">
-                                    <div class="row">
                                        <select name="payment" id="payment">
                                           <option value="cash">наличными</option>
                                           <option value="card">картой</option>
                                        </select>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
                                        <input type="text" id="price" name="price" readonly>
+
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="row mt-5">
-                              <input type="submit" class="price__form-submit" value="Оставить заявку">
-                           </div>
-                        </form>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+
+                        </div>
+                        <div class="price__right-content" id="priceTab_2">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">666</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
                      </div>
-                     <div class="price__right-content" id="priceTab_2">
-                        <p>serebro</p>
-                     </div>
-                  </div>
 
 
 
-                  <div class="price__right-item" id="tab_2">
-                     <button class="price__right-tab active" data-tab="#priceTab2_1">Золото</button>
-                     <button class="price__right-tab" data-tab="#priceTab2_2">Серебро</button>
+                     <div class="price__right-item" id="tab_2">
+                        <button class="price__right-tab active" data-tab="#priceTab2_1">Золото</button>
+                        <button class="price__right-tab" data-tab="#priceTab2_2">Серебро</button>
 
-                     <div class="price__right-content active" id="priceTab2_1">
-                        <p>22222zoloto</p>
-                     </div>
-                     <div class="price__right-content" id="priceTab2_2">
-                        <p>2222222serebro</p>
-                     </div>
-                  </div>
+                        <div class="price__right-content active" id="priceTab2_1">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">777</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
 
-                  <div class="price__right-item" id="tab_3">
-                     <button class="price__right-tab active" data-tab="#priceTab3_1">Золото</button>
-                     <button class="price__right-tab" data-tab="#priceTab3_2">Серебро</button>
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
 
-                     <div class="price__right-content active" id="priceTab3_1">
-                        <p>333333zoloto</p>
-                     </div>
-                     <div class="price__right-content" id="priceTab3_2">
-                        <p>3333333333serebro</p>
-                     </div>
-                  </div>
-                  <div class="price__right-item" id="tab_4">
-                     <button class="price__right-tab active" data-tab="#priceTab4_1">Золото</button>
-                     <button class="price__right-tab" data-tab="#priceTab4_2">Серебро</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
 
-                     <div class="price__right-content active" id="priceTab4_1">
-                        <p>44444444zoloto</p>
+                           </form>
+                        </div>
+                        <div class="price__right-content" id="priceTab2_2">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">888</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
                      </div>
-                     <div class="price__right-content" id="priceTab4_2">
-                        <p>44444444serebro</p>
+
+                     <div class="price__right-item" id="tab_3">
+                        <button class="price__right-tab active" data-tab="#priceTab3_1">Золото</button>
+                        <button class="price__right-tab" data-tab="#priceTab3_2">Серебро</button>
+
+                        <div class="price__right-content active" id="priceTab3_1">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">999</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
+                        <div class="price__right-content" id="priceTab3_2">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">111</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
+                     </div>
+                     <div class="price__right-item" id="tab_4">
+                        <button class="price__right-tab active" data-tab="#priceTab4_1">Золото</button>
+                        <button class="price__right-tab" data-tab="#priceTab4_2">Серебро</button>
+
+                        <div class="price__right-content active" id="priceTab4_1">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">222</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
+                        <div class="price__right-content" id="priceTab4_2">
+                           <form action="" class="price__form-box">
+                              <div class="price__form">
+                                 <div class="price__form-left">
+                                    <div class="price__metal-box">
+                                       <label for="metal" class="price__form-label">Укажите пробу металла</label>
+                                       <select name="metal" id="metal">
+                                          <option value="585">333</option>
+                                          <option value="375">375</option>
+                                          <option value="500">500</option>
+                                          <option value="750">750</option>
+                                          <option value="875">875</option>
+                                          <option value="916">916</option>
+                                          <option value="958">958</option>
+                                          <option value="999">999</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__weight-box">
+                                       <label for="weight" class="price__form-label">Укажите вес металла, г.</label>
+                                       <input type="text" id="weight" name="weight">
+                                    </div>
+                                    <div class="price__phone-box">
+                                       <label for="phone" class="price__form-label">Ваш номер телефона:</label>
+                                       <input type="tel" id="phone" name="phone" placeholder="88005553535">
+                                    </div>
+                                 </div>
+
+                                 <div class="price__form-right">
+                                    <div class="price__payment-box">
+                                       <label for="payment" class="price__form-label">Укажите способ оплаты</label>
+                                       <select name="payment" id="payment">
+                                          <option value="cash">наличными</option>
+                                          <option value="card">картой</option>
+                                       </select>
+                                    </div>
+                                    <div class="price__price-box">
+                                       <label for="price" class="price__form-label">Примерная стоимость:</label>
+                                       <input type="text" id="price" name="price" readonly>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="price__form-bottom">
+                                 <input type="submit" class="price__form-btn" value="Оставить заявку">
+                                 <div class="price__form-radio">
+                                    <label for="muhRadio2"><input type="radio" name="muhRadio" value="" /> Даю согласие
+                                       на
+                                       обработку персональных данных</label>
+                                 </div>
+                              </div>
+
+                           </form>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-   </section> -->
+      </section>
 
       <section class="map">
          <div class="container">
