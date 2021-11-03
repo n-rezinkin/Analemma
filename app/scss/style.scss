@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "fonts";
+@import "nullstyle";
+@import "global";
+@import "_header";
+@import "_graphics";
+@import "_price";
+@import "_map";
+@import "_sell";
+@import "_silver";
+@import "_text";
+@import "_footer";
+
+.test {
+   width: 600px;
+   height: 400px;
+}

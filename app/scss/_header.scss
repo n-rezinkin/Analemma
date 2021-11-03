@@ -1,0 +1,222 @@
+.header {
+   @media (max-width: 768px) {
+      background: rgba(79, 0, 161, 1);
+   }
+   &__inner {
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      background: rgba(79, 0, 161, 0.9);
+      height: 100px;
+
+      background-image: url("../img/header/analemma_logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      // & img {
+      //    width: 100%;
+      //    height: auto;
+      //    max-width: 256px;
+      // }
+
+      @media (max-width: 1200px) {
+         height: 80px;
+      }
+      @include media-breakpoint-down(md) {
+         height: 60px;
+      }
+   }
+
+   &__main {
+      background: rgba(79, 0, 161, 0.9);
+      // margin-left: 15px;
+      // padding: 0 50px;
+      height: 100px;
+      align-items: center;
+      display: flex;
+
+      @media (max-width: 1200px) {
+         height: 80px;
+      }
+      @include media-breakpoint-down(md) {
+         height: 60px;
+      }
+   }
+
+   &__menu-list {
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   &__menu-item {
+   }
+
+   &__menu-link {
+      color: white;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+
+      @media (max-width: 1200px) {
+         font-size: 20px;
+         line-height: 20px;
+      }
+      @media (max-width: 992px) {
+         font-size: 16px;
+      }
+
+      @include media-breakpoint-down(md) {
+         font-size: 13px;
+      }
+   }
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 24px;
+      padding-right: 50px;
+
+      @media (max-width: 1400px) {
+         padding-right: 30px;
+      }
+
+      @media (max-width: 992px) {
+         padding-right: 10px;
+      }
+   }
+
+   &__info-phone {
+      display: flex;
+      margin-right: 65px;
+      align-items: center;
+
+      @media (max-width: 1400px) {
+         margin-right: 40px;
+      }
+      @media (max-width: 1200px) {
+         margin-right: 20px;
+      }
+
+      @media (max-width: 992px) {
+         margin-right: 10px;
+      }
+   }
+
+   &__phone-img {
+      width: 35px;
+      height: 35px;
+
+      @media (max-width: 1200px) {
+         width: 30px;
+         height: 30px;
+      }
+
+      @media (max-width: 992px) {
+         width: 20px;
+         height: 20px;
+      }
+   }
+
+   &__phone-number {
+      color: #ffffff;
+      white-space: nowrap;
+      padding-left: 12px;
+
+      @media (max-width: 1200px) {
+         font-size: 20px;
+         padding-left: 8px;
+      }
+      @media (max-width: 992px) {
+         font-size: 16px;
+      }
+      @media (max-width: 768px) {
+         display: none;
+      }
+
+      @include media-breakpoint-down(md) {
+         font-size: 13px;
+      }
+   }
+
+   &__info-courier {
+      display: flex;
+      align-items: center;
+   }
+
+   &__courier-img {
+      width: 25px;
+      height: 40px;
+
+      @media (max-width: 1200px) {
+         width: 20px;
+         height: 35px;
+      }
+
+      @media (max-width: 992px) {
+         width: 20px;
+         height: 25px;
+      }
+
+      @media (max-width: 768px) {
+         margin-right: 10px;
+         margin-left: 10px;
+      }
+
+      @include media-breakpoint-down(md) {
+         margin-left: 0;
+         margin-right: 0;
+      }
+   }
+
+   &__courier-call {
+      color: #ffffff;
+      white-space: nowrap;
+      padding-left: 12px;
+
+      @media (max-width: 1200px) {
+         font-size: 20px;
+         padding-left: 8px;
+      }
+
+      @media (max-width: 992px) {
+         font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+         display: none;
+      }
+   }
+
+   // &__menu-btn {
+   //    display: none;
+   //    width: 43px;
+   //    height: 12px;
+   //    cursor: pointer;
+   //    border-top: 2px solid #000000;
+   //    background-color: transparent;
+   //    position: relative;
+
+   //    &::before {
+   //       content: "";
+   //       position: absolute;
+   //       width: 29px;
+   //       height: 2px;
+   //       background-color: #000000;
+   //       left: 0;
+   //       top: 8px;
+   //    }
+
+   //    @media (max-width: 767px) {
+   //       display: block;
+   //    }
+   // }
+}
+
+.header .col {
+   @include media-breakpoint-down(md) {
+      padding: 0;
+   }
+}

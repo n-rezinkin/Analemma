@@ -1,0 +1,77 @@
+.map {
+   margin-top: 15px;
+
+   &__location {
+      height: 650px;
+      @include media-breakpoint-down(md) {
+         margin-top: 15px;
+         height: 350px;
+      }
+   }
+   &__content {
+      position: relative;
+
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   &__legend {
+      position: absolute;
+      top: 24%;
+      left: 15%;
+      max-width: 425px;
+      // height: 340px;
+      padding: 20px;
+      z-index: 1000;
+      content: "";
+      background: rgba(79, 0, 161, 0.9);
+
+      @include media-breakpoint-down(xl) {
+         top: 13%;
+         left: 65%;
+         max-width: 320px;
+         padding: 15px;
+         margin-right: 15px;
+      }
+
+      @include media-breakpoint-down(md) {
+         position: static;
+         max-width: 100%;
+         margin-right: 0;
+         width: 100%;
+      }
+   }
+
+   &__legend-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      /* identical to box height */
+
+      color: #ffffff;
+
+      @include media-breakpoint-down(xl) {
+         font-size: 20px;
+         line-height: 25px;
+      }
+   }
+   &__legend-text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 17px;
+      color: #ffffff;
+      opacity: 0.9;
+      &:first-of-type {
+         margin-top: 22px;
+      }
+      &:last-of-type {
+         padding-bottom: 10px;
+      }
+
+      @include media-breakpoint-down(xl) {
+         font-size: 15px;
+         line-height: 18px;
+      }
+   }
+}

@@ -1,0 +1,47 @@
+@font-face {
+   font-family: "SFProDisplay";
+   font-style: normal;
+   font-weight: bold;
+
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("SFProDisplay"),
+      /* Если не получилось, загрузит woff2 */ url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */ url("../fonts/SFProDisplay-Bold.woff") format("woff"),
+      url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "SFProDisplay";
+   font-style: normal;
+   font-weight: normal;
+
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("SFProDisplay"),
+      /* Если не получилось, загрузит woff2 */ url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */ url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+      url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "SFProDisplay";
+   font-style: normal;
+   font-weight: 400;
+
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("SFProDisplay"),
+      /* Если не получилось, загрузит woff2 */ url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */ url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+      url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "SFProDisplay";
+   font-style: normal;
+   font-weight: 600;
+
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("SFProDisplay"),
+      /* Если не получилось, загрузит woff2 */ url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */ url("../fonts/SFProDisplay-Semibold.woff") format("woff"),
+      url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
+}
