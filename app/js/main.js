@@ -111,7 +111,7 @@ let chartOptions = {
          ticks: {
             display: true,
             color: '#FFF',
-            maxTicksLimit: 12,
+            maxTicksLimit: 6,
             stepSize: 50,
 
          }
@@ -143,7 +143,7 @@ let lineChart = new Chart(gold585Canvas, {
 
 let gold999Canvas = document.getElementById("gold999Chart");
 let gold999DataDots = [];
-for (var i = 0, l = 12; i < l; i++) {
+for (var i = 0, l = 72; i < l; i++) {
    gold999DataDots.push(Math.round(Math.random() * (4100 - 3500) + 3500))
 };
 
@@ -151,7 +151,7 @@ for (var i = 0, l = 12; i < l; i++) {
 
 
 let gold999Data = {
-   labels: ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12"],
+   labels: ["01.01", "05.01", "10.01", "15.01", "20.01", "25.01", "01.02", "05.02", "10.02", "15.02", "20.02", "25.02", "01.03", "05.03", "10.03", "15.03", "20.03", "25.03", "01.04", "05.04", "10.04", "15.04", "20.04", "25.04", "01.05", "05.05", "10.05", "15.06", "20.05", "25.05", "01.06", "05.06", "10.06", "15.06", "20.06", "25.06", "01.07", "05.07", "10.07", "15.07", "20.07", "25.07", "01.08", "05.08", "10.08", "15.08", "20.08", "25.08", "01.09", "05.09", "10.09", "15.09", "20.09", "25.09", "01.10", "05.10", "10.10", "20.10", "15.10", "25.10", "01.11", "05.11", "10.11", "15.11", "20.11", "25.11", "01.12", "05.12", "10.12", "15.12", "20.12", "25.12"],
    datasets: [{
 
       data: gold999DataDots,
@@ -159,7 +159,7 @@ let gold999Data = {
       lineTension: 0,
       borderColor: 'white',
       fill: true,
-      pointRadius: 3,
+      pointRadius: 0,
       pointBackgroundColor: 'rgba(255, 255, 255, 1)',
    }]
 };
@@ -175,14 +175,14 @@ let lineChartGold999 = new Chart(gold999Canvas, {
 
 let silverCanvas = document.getElementById("silverChart");
 let silverDataDots = [];
-for (var i = 0, l = 12; i < l; i++) {
+for (var i = 0, l = 72; i < l; i++) {
    silverDataDots.push(Math.round(Math.random() * (70 - 20) + 20))
 };
 // document.querySelectorAll('.graphics__top-price')[2].firstChild.innerHTML = silverDataDots[11];
 
 // document.querySelectorAll('.graphics__top-price p:nth-child(2)').innerHTML = goldData[11];
 let silverData = {
-   labels: ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12"],
+   labels: ["01.01", "05.01", "10.01", "15.01", "20.01", "25.01", "01.02", "05.02", "10.02", "15.02", "20.02", "25.02", "01.03", "05.03", "10.03", "15.03", "20.03", "25.03", "01.04", "05.04", "10.04", "15.04", "20.04", "25.04", "01.05", "05.05", "10.05", "15.06", "20.05", "25.05", "01.06", "05.06", "10.06", "15.06", "20.06", "25.06", "01.07", "05.07", "10.07", "15.07", "20.07", "25.07", "01.08", "05.08", "10.08", "15.08", "20.08", "25.08", "01.09", "05.09", "10.09", "15.09", "20.09", "25.09", "01.10", "05.10", "10.10", "20.10", "15.10", "25.10", "01.11", "05.11", "10.11", "15.11", "20.11", "25.11", "01.12", "05.12", "10.12", "15.12", "20.12", "25.12"],
    datasets: [{
 
       data: silverDataDots,
@@ -190,7 +190,7 @@ let silverData = {
       lineTension: 0,
       borderColor: 'white',
       fill: true,
-      pointRadius: 3,
+      pointRadius: 0,
       pointBackgroundColor: 'rgba(255, 255, 255, 1)',
    }]
 };
