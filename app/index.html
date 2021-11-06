@@ -9,12 +9,17 @@
    <title>Аналемма</title>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
    <link rel="stylesheet" href="css/icons.css">
+   <link rel="stylesheet" href="css/hystmodal.min.css">
+   <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/slick.css" />
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
    <div class="wrapper">
+
+
+
       <header class="header">
          <div class="container">
             <div class="row">
@@ -28,20 +33,23 @@
                      <div class="col">
                         <nav class="header__menu">
                            <ul class="header__menu-list">
-                              <li class="header__menu-item"><a href="" class="header__menu-link">Прайс</a></li>
-                              <li class="header__menu-item"><a href="" class="header__menu-link">Наш адрес</a></li>
+                              <li class="header__menu-item"><a href="#sellSection" class="header__menu-link">Прайс</a>
+                              </li>
+                              <li class="header__menu-item"><a href="#mapSection" class="header__menu-link">Наш
+                                    адрес</a></li>
                            </ul>
                         </nav>
                      </div>
                      <div class="col-md">
                         <div class="header__info">
                            <div class="header__info-phone xl-col">
-                              <img src="img/header/phone.svg" alt="phone" class="header__phone-img">
-                              <a href="tel:88005113342" class="header__phone-number">8 (800) 511-3-342</a>
+
+                              <a href="tel:88001019888" class="header__phone-number"><img src="img/header/phone.svg"
+                                    alt="phone" class="header__phone-img"><span>8-800-101-98-88</span> </a>
                            </div>
-                           <div class="header__info-courier xl-col">
+                           <div class="header__info-courier xl-col" data-hystmodal="#myModal">
                               <img src="img/header/man.svg" alt="man" class="header__courier-img">
-                              <a href="#" class="header__courier-call">Вызвать курьера</a>
+                              <a href="#" class="header__courier-call" data-hystmodal="#myModal">Вызвать курьера</a>
                            </div>
                         </div>
                      </div>
@@ -65,7 +73,8 @@
                      <div class="row">
                         <div class="graphics__top">
                            <p class="graphics__top-title">Скупка золота 585</p>
-                           <p class="graphics__top-price">2 400&#8381;/гр </p>
+                           <p class="graphics__top-price"><span class="odometer" id="odometer1"></span>&#8381;/гр </p>
+
                         </div>
                      </div>
                      <div class="row">
@@ -84,7 +93,7 @@
                      <div class="row">
                         <div class="graphics__top">
                            <p class="graphics__top-title">Скупка золота 999</p>
-                           <p class="graphics__top-price">4100&#8381;/гр </p>
+                           <p class="graphics__top-price"><span class="odometer" id="odometer2"></span>&#8381;/гр </p>
                         </div>
                      </div>
                      <div class="row">
@@ -102,7 +111,7 @@
                      <div class="row">
                         <div class="graphics__top">
                            <p class="graphics__top-title">Скупка золота 925</p>
-                           <p class="graphics__top-price">40&#8381;/гр </p>
+                           <p class="graphics__top-price"><span class="odometer" id="odometer3"></span>&#8381;/гр </p>
                         </div>
                      </div>
                      <div class="row">
@@ -600,26 +609,24 @@
          </div>
       </section>
 
-      <section class="map">
+      <section class="map" id="mapSection">
          <div class="container">
             <div class="row">
                <div class="map__content">
                   <div class="map__location">
+                     <!-- <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac88bda1402ba46b81f557ff0179a391061f4939352299764db95839f9cede10f&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;"></script> -->
                      <script type="text/javascript" charset="utf-8" async
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac88bda1402ba46b81f557ff0179a391061f4939352299764db95839f9cede10f&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;"></script>
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac88bda1402ba46b81f557ff0179a391061f4939352299764db95839f9cede10f&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                   </div>
                   <div class="map__legend">
-                     <h3 class="map__legend-title">Ленинградский проспект, д.71в</h3>
+                     <h3 class="map__legend-title">ул. Краснодарская, д.48</h3>
                      <p class="map__legend-text">станция метро: <br>
-                        м. Сокол</p>
+                        м. Люблино</p>
                      <p class="map__legend-text">телефон: <br>
-                        8 (499) 157-11-78</p>
-                     <p class="map__legend-text">график работы: <br>
-                        с 09.00 до 20.00, в выходные: с 09.00 до 20.00</p>
-                     <p class="map__legend-text">Последний вагон из центра. Выход из стеклянных дверей,
-                        поворот направо, движение до перехода,
-                        поворот по ступенькам налево. 50 метров направо до арки.
-                        Вход в арку. Ломбард располагается с торца дома.</p>
+                        <a href="tel:88001019888" style="color: white">8-800-101-98-88</a>
+                     </p>
+
                   </div>
                </div>
 
@@ -627,7 +634,7 @@
          </div>
       </section>
 
-      <section class="sell">
+      <section class="sell" id="sellSection">
          <div class="container">
             <div class="row">
                <div class="col-12 col-md-4">
@@ -635,75 +642,121 @@
                      <div class="sell__container">
                         <h3 class="sell__left-title">Хочу продать</h3>
                         <ul class="sell__left-items">
-                           <li class="sell__left-item active">Золото</li>
+                           <li class="sell__left-item">Золото</li>
                            <li class="sell__left-item">Серебро</li>
                         </ul>
                         <form action="" class="sell__left-form">
                            <input type="text" class="sell__form-name" placeholder="Ваше имя">
                            <input type="text" class="sell__form-phone" placeholder="Ваш номер телефона">
+                           <div class="sell__type-box">
+                              <label for="sellType">Проба: </label>
+                              <input type="text" class="sell__form-type" id="sellType" name="sellType" readonly
+                                 value="">
+                           </div>
+                           <div class="sell__payment-box">
+                              <label for="sellPayment">Оплата:</label>
+                              <select name="sellPayment" id="sellPayment">
+                                 <option value="cash">наличными</option>
+                                 <option value="card">картой</option>
+                                 <option value="card">безналичный на р/ч</option>
+
+                              </select>
+                           </div>
                            <input type="submit" class="sell__form-btn" value="Оставить заявку">
+
+
                         </form>
+
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-8 mt-3 mt-md-0">
-                  <div class="sell__right">
-                     <h3 class="sell__right-title">Прайс на покупку золота – цена за 1 грамм металла</h3>
-                     <div class="sell__right-tablebox">
-                        <table class="sell__right-table">
-                           <tr class="sell__right-tablerow">
-                              <th>ПРОБА</th>
-                              <th>Наличными</th>
-                              <th>На карту</th>
-                              <th>Безналичный на р/ч</th>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
-                           <tr class="sell__right-tablerow">
-                              <td>375</td>
-                              <td>1480-1510Р</td>
-                              <td>1480-1510P</td>
-                              <td>1480-1510P</td>
-                           </tr>
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="sell__right">
+                           <h3 class="sell__right-title">Прайс на покупку золота – цена за 1 грамм металла</h3>
+                           <div class="sell__right-tablebox">
+                              <table class="sell__right-table" id="tableId">
+                                 <tbody>
+                                    <tr class="sell__right-tablerow">
+                                       <th>ПРОБА</th>
+                                       <th>Наличными</th>
+                                       <th>На карту</th>
+                                       <th>Безналичный на р/ч</th>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">375</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">385</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">750</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">850</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">916</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
+                                    <tr class="sell__right-tablerow">
+                                       <td class="sell__right-type">958</td>
+                                       <td class="sell__right-cash">1480-1510Р</td>
+                                       <td class="sell__right-card">1480-1510P</td>
+                                       <td class="sell__right-bank">1480-1510P</td>
+                                    </tr>
 
-
-                        </table>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row mt-3">
+                     <div class="col-12">
+                        <div class="silver__sell">
+                           <h3 class="silver__right-title">Прайс на покупку серебра – цена за 1 грамм металла</h3>
+                           <div class="silver__right-tablebox">
+                              <table class="silver__right-table" id="silverTable">
+                                 <tr class="silver__right-tablerow">
+                                    <th>ПРОБА</th>
+                                    <th>Наличными</th>
+                                    <th>На карту</th>
+                                    <th>Безналичный на р/ч</th>
+                                 </tr>
+                                 <tr class="silver__right-tablerow" onclick="addSilverRowHandlers()">
+                                    <td>925</td>
+                                    <td>1480-1510Р</td>
+                                    <td>1480-1510P</td>
+                                    <td>1480-1510P</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
+
             </div>
          </div>
       </section>
 
-      <section class="silver">
+      <!-- <section class="silver">
          <div class="container">
             <div class="row">
                <div class="col-0 col-md-4">
@@ -732,24 +785,41 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
 
       <section class="text">
          <div class="container">
             <div class="row">
                <div class="col">
-                  <p class="text__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                     nibh
-                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                     aliquip
-                     ex
-                     ea commodo consequat. Duis autem vel eum iriure dolor
-                     in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                     facilisis
-                     at
-                     vero eros et accumsan et iusto odio dignissim qui blandit
-                     praesent luptatum zzril delenit augue duis dolore </p>
+                  <div class="text__content">
+                     <p> Бренд «АНАЛЕММА хорошо узнаваем на рынке драгоценных металлов в России. Наш
+                        персонал -высококвалифицированный, всегда готовый оперативно ответить на все вопросы и решить
+                        любую
+                        потребность по операциям, связанным с оборотом драгоценных металлов , от покупки до продажи.</p>
+                     <p> Наша компания имеет высокоточное и профессиональное оборудование, для определения пробы и
+                        профессиональных весов для точного взвешивания драгоценных металлов, таких как Au, Ag, Pt. Мы
+                        гарантируем максимально выгодный и точный расчет для каждого клиента. Мы готовы принять любые
+                        формы
+                        расчётов с поставщиками лома и других драгоценных металлов: наличный расчет, перечисление на
+                        банковскую карту, а также безналичный расчет.</p>
+                     <p>Наше преимущество- наличие основной группы драгоценных металлов :золото, серебро, платина. Вид
+                        металла представлен в любом виде по требованию заказчика (гранулы, слитки, порошок платины и
+                        платиновые пластины), что кардинальным образом отличает нас от конкурентов. Наши клиенты находят
+                        в
+                        нашей компании весь спектр услуг в одном месте, по самой выгодной цене.</p>
+                     <p>Наша компания постоянно развивает сеть своих представительств в других городах. На сегодняшний
+                        день
+                        уже работают офисы: <br>
+                        • Москва <br>
+                        • Санкт-Петербург <br>
+                        • Оренбург <br>
+                        • Уфа. <br>
+                        «АНАЛЕММА» является компанией, занимающей лидирующие позиции на рынке драгоценных металлов в
+                        России.</p>
+
+
+
+                  </div>
                </div>
             </div>
          </div>
@@ -758,30 +828,17 @@
       <section class="footer">
          <div class="container">
             <div class="footer__content">
-
-
-
-
                <p class="footer__policy-text">Политика конфиденциальности</p>
-
-
-
-
-
                <p class="footer__agreement-text">Пользовательское соглашение</p>
-
-
-
                <div class="footer__info-phone">
-                  <img src="img/header/phone.svg" alt="phone" class="header__phone-img">
-                  <a href="tel:88005113342" class="footer__phone-number">8 (800) 511-3-342</a>
+                  <a href="tel:88001019888" class="footer__phone-number"><img src="img/header/phone.svg" alt="phone"
+                        class="header__phone-img"><span>8-800-101-98-88</span> </a>
                </div>
 
-
-
-               <div class="footer__info-courier">
+               <div class="footer__info-courier" data-hystmodal="#myModal">
                   <img src="img/header/man.svg" alt="man" class="header__courier-img">
                   <a href="#" class="footer__courier-call">Вызвать курьера</a>
+
                </div>
 
             </div>
@@ -789,11 +846,30 @@
          </div>
       </section>
 
+      <div class="hystmodal" id="myModal" aria-hidden="true">
+         <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+               <button data-hystclose class="hystmodal__close">Закрыть</button>
+               <form action="" class="modal__form">
+                  <input type="text" class="modal__form-name" placeholder="Ваше имя">
+                  <input type="text" class="modal__form-phone" placeholder="Ваш номер телефона">
 
+
+                  <input type="submit" class="modal__form-btn" value="Оставить заявку">
+
+
+               </form>
+            </div>
+         </div>
+      </div>
 
    </div>
-   <script src="js/main.js"></script>
 
+   </div>
+
+   <script src="js/hystmodal.min.js"></script>
+   <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>

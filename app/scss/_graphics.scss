@@ -61,12 +61,14 @@
 
    &__top-price {
       font-weight: bold;
-      font-size: 30px;
+      font-size: 25px;
       line-height: 36px;
       text-align: center;
       color: #ffffff;
       border-bottom: 1px dashed;
       padding-bottom: 5px;
+      white-space: nowrap;
+      padding-left: 5px;
 
       @include media-breakpoint-down(xl) {
          font-size: 18px;

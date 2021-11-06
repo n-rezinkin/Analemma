@@ -71,6 +71,10 @@
       align-items: center;
       margin-right: 10px;
 
+      & img {
+         margin-right: 12px;
+      }
+
       @include media-breakpoint-down(md) {
          width: 50%;
          margin-right: 0;
