@@ -69,7 +69,7 @@ gradient.addColorStop(1, 'rgba(255, 255, 255, 0.01)');
 // Chart.defaults.global.defaultFontSize = 18;
 // let goldData = [2100, 2130, 2120, 2150, 2200, 2205, 2190, 2150, 2250, 2290, 2300, 2400];
 let goldData = [];
-for (var i = 0, l = 12; i < l; i++) {
+for (var i = 0, l = 72; i < l; i++) {
    goldData.push(Math.round(Math.random() * (2400 - 2000) + 2000))
    // console.log(goldData[11])
 };
@@ -78,7 +78,7 @@ for (var i = 0, l = 12; i < l; i++) {
 
 
 let gold585Data = {
-   labels: ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12"],
+   labels: ["01.01", "05.01", "10.01", "15.01", "20.01", "25.01", "01.02", "05.02", "10.02", "15.02", "20.02", "25.02", "01.03", "05.03", "10.03", "15.03", "20.03", "25.03", "01.04", "05.04", "10.04", "15.04", "20.04", "25.04", "01.05", "05.05", "10.05", "15.06", "20.05", "25.05", "01.06", "05.06", "10.06", "15.06", "20.06", "25.06", "01.07", "05.07", "10.07", "15.07", "20.07", "25.07", "01.08", "05.08", "10.08", "15.08", "20.08", "25.08", "01.09", "05.09", "10.09", "15.09", "20.09", "25.09", "01.10", "05.10", "10.10", "20.10", "15.10", "25.10", "01.11", "05.11", "10.11", "15.11", "20.11", "25.11", "01.12", "05.12", "10.12", "15.12", "20.12", "25.12"],
    datasets: [{
 
       data: goldData,
@@ -86,7 +86,7 @@ let gold585Data = {
       lineTension: 0,
       borderColor: 'white',
       fill: true,
-      pointRadius: 6,
+      pointRadius: 0,
       pointBackgroundColor: 'rgba(255, 255, 255, 1)',
    }]
 };
@@ -104,19 +104,26 @@ let chartOptions = {
 
    scales: {
       x: {
+
          grid: {
             display: false
          },
          ticks: {
-            display: false,
+            display: true,
+            color: '#FFF',
+            maxTicksLimit: 12,
+            stepSize: 50,
+
          }
       },
       y: {
          grid: {
-            display: false
+            display: true
          },
          ticks: {
             display: false,
+            stepSize: 70,
+            beginAtZero: true,
          }
       },
    }
@@ -152,7 +159,7 @@ let gold999Data = {
       lineTension: 0,
       borderColor: 'white',
       fill: true,
-      pointRadius: 6,
+      pointRadius: 3,
       pointBackgroundColor: 'rgba(255, 255, 255, 1)',
    }]
 };
@@ -183,7 +190,7 @@ let silverData = {
       lineTension: 0,
       borderColor: 'white',
       fill: true,
-      pointRadius: 6,
+      pointRadius: 3,
       pointBackgroundColor: 'rgba(255, 255, 255, 1)',
    }]
 };
